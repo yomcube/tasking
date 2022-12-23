@@ -1,0 +1,32 @@
+@import url('https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+body {
+	background-color: #a4d6c2;
+}
+#titleanddescriptiondiv {
+	background-color: #1267c9;
+	margin: auto;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	border-radius: 10px;
+	width: 100%;
+}
+#title, #description {
+	color: white;
+}
+#title, #description, .columntitle {
+	font-family: Comic Mono, monospace;
+	text-align: center;
+}
+#columns {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.column {
+  background-color: #f2fdff;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  font-family: Ubuntu Mono, monospace;
+}
