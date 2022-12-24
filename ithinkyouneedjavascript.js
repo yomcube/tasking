@@ -22,4 +22,7 @@ function addNewTask(type, task) {
 			regularUl.appendChild(newelem);
 	}
 }
-addNewTask("i", "Eat Bugle")
+
+addNewTask("r", "Example")
+addNewTask("t", "<i>Example</i>")
+addNewTask("i", "<b><u>Example</u></b>")
