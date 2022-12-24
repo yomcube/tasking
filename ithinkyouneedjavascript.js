@@ -23,6 +23,6 @@ function addNewTask(type, task) {
 	}
 }
 
-addNewTask("r", "Example")
-addNewTask("t", "<i>Example</i>")
-addNewTask("i", "<b><u>Example</u></b>")
+addNewTask("r", "Example");
+addNewTask("t", "<i>Example</i>");
+addNewTask("i", "<b><u>Example</u></b>");
