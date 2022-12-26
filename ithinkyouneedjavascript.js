@@ -12,13 +12,16 @@ function addNewTask(type, task) {
 	newelem.innerHTML = task;
 	switch(type) {
 		case "i":
+			newelem.id = `immediate${immediateTasks.length}`;
 			immediateUl.appendChild(newelem);
 			break;
 		case "t":
+			newelem.id = `todo${todoTasks.length}`;
 			todoUl.appendChild(newelem);
 			break;
 		case "r":
 		default:
+			newelem.id = `regular${regularTasks.length}`;
 			regularUl.appendChild(newelem);
 	}
 }
