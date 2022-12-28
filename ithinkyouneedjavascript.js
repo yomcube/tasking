@@ -4,17 +4,13 @@ var regularTasks   = regularUl.getElementsByTagName("li");
 var todoUl         = document.getElementById("todo");
 var todoTasks      = todoUl.getElementsByTagName("li");
 
-var immediateUl    = document.getElementById("immediate");
-var immediateTasks = immediateUl.getElementsByTagName("li");
-
 function addNewTask(type, task) {
+	if(task == "" || task == " ") {
+		return;
+	}
 	var newelem = document.createElement("li");
 	newelem.innerHTML = task;
 	switch(type) {
-		case "i":
-			newelem.id = `immediate${immediateTasks.length}`;
-			immediateUl.appendChild(newelem);
-			break;
 		case "t":
 			newelem.id = `todo${todoTasks.length}`;
 			todoUl.appendChild(newelem);
@@ -32,8 +28,4 @@ function addNewRegularTask() {
 function addNewTodoTask() {
 	task = prompt("Enter the task below", "");
 	addNewTask("t", task);
-}
-function addNewImmediateTask() {
-	task = prompt("Enter the task below", "");
-	addNewTask("i", task);
 }
