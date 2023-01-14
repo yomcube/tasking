@@ -30,5 +30,5 @@ function addNewTodoTask() {
 	addNewTask("t", task);
 }
 function removeTask(elem) {
-	document.parentNode.removeChild(elem);
+	elem.remove();
 }
