@@ -29,3 +29,6 @@ function addNewTodoTask() {
 	task = prompt("Enter the task below", "");
 	addNewTask("t", task);
 }
+function removeTask(elem) {
+	document.removeChild(elem);
+}
