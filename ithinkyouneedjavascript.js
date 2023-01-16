@@ -11,6 +11,7 @@ function addNewTask(type, task) {
 	var newelem = document.createElement("li");
 	newelem.innerHTML = task;
 	var newbutton = document.createElement("button");
+	newelem.appendChild(newbutton);
 	newbutton.onclick = removeTask(this.parentNode);
 	switch(type) {
 		case "t":
