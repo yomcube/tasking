@@ -21,14 +21,6 @@ function addNewTask(type, task) {
 			regularUl.appendChild(newelem);
 	}
 }
-function addNewRegularTask() {
-	task = prompt("Enter the task below", "");
-	addNewTask("r", task);
-}
-function addNewTodoTask() {
-	task = prompt("Enter the task below", "");
-	addNewTask("t", task);
-}
 function removeTask(elem) {
 	elem.remove();
 }
