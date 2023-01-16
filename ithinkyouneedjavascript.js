@@ -9,10 +9,7 @@ function addNewTask(type, task) {
 		return;
 	}
 	var newelem = document.createElement("li");
-	newelem.innerHTML = task;
-	var newbutton = document.createElement("button");
-	newelem.appendChild(newbutton);
-	newbutton.onclick = removeTask(this.parentNode);
+	newelem.innerHTML = task + ' <button class="removebutton" onclick="removeTask(this.parentNode)">-</button>';
 	switch(type) {
 		case "t":
 			newelem.id = `todo${todoTasks.length}`;
