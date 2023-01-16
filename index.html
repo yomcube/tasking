@@ -20,7 +20,7 @@
 			</ul>
 			<hr>
 			<input type="text" id="regularinput">
-			<button onclick="addNewTask('r', document.getElementById('regularinput').value)">Add new task...</button>
+			<button onclick="var reginput=document.getElementById('regularinput');addNewTask('r', reginput.value);reginput.value='';">Add new task...</button>
 		</div>
 		<div id="todocol" class="column">
 			<div class="columntitle">
@@ -31,7 +31,7 @@
 			</ul>
 			<hr>
 			<input type="text" id="todoinput">
-			<button onclick="addNewTask('t', document.getElementById('todoinput').value)">Add new task...</button>
+			<button onclick="var todoinput=document.getElementById('todoinput');addNewTask('t', todoinput.value);todoinput.value='';">Add new task...</button>
 		</div>
 	</div>
 	<script src="ithinkyouneedjavascript.js"></script>
