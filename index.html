@@ -11,25 +11,25 @@
 		<p id="description">Tasking is a free website that manages your tasks.</p>
 	</div>
 	<div id="columns">
-		<div id="regularcol" class="column">
+		<div id="routinecol" class="column">
 			<div class="columntitle">
-				Regular tasks
+				Routine tasks
 			</div>
 			<hr>
-			<ul id="regular">
+			<ul id="routine">
 			</ul>
-			<input type="text" id="regularinput">
-			<button onclick="var reginput=document.getElementById('regularinput');addNewTask('r', reginput.value);reginput.value='';">Add new task...</button>
+			<input type="text" id="routineinput">
+			<button onclick="var routineinput=document.getElementById('routineinput');addNewTask('r', routineinput.value);routineinput.value='';">Add new task...</button>
 		</div>
-		<div id="todocol" class="column">
+		<div id="othercol" class="column">
 			<div class="columntitle">
-				To do tasks
+				other tasks
 			</div>
 			<hr>
-			<ul id="todo">
+			<ul id="other">
 			</ul>
-			<input type="text" id="todoinput">
-			<button onclick="var todoinput=document.getElementById('todoinput');addNewTask('t', todoinput.value);todoinput.value='';">Add new task...</button>
+			<input type="text" id="otherinput">
+			<button onclick="var otherinput=document.getElementById('otherinput');addNewTask('o', otherinput.value);otherinput.value='';">Add new task...</button>
 		</div>
 	</div>
 	<script src="ithinkyouneedjavascript.js"></script>
