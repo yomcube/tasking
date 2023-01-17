@@ -1,4 +1,4 @@
-var routineUl = document.getElementById("rotine");
+var routineUl = document.getElementById("routine");
 var otherUl = document.getElementById("other");
 
 function addNewTask(type, task) {
