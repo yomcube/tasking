@@ -27,8 +27,8 @@ body {
   background-color: #f2fdff;
   margin: 10px;
   padding: 20px;
-  font-size: 30px;
 }
 .column, .removebutton {
 	font-family: Ubuntu Mono, monospace;
+	font-size: 30px;
 }
