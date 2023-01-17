@@ -12,12 +12,10 @@ function addNewTask(type, task) {
 	newelem.innerHTML = task + ' <button class="removebutton" onclick="removeTask(this.parentNode)">-</button>';
 	switch(type) {
 		case "t":
-			newelem.id = `todo${todoTasks.length}`;
 			todoUl.appendChild(newelem);
 			break;
 		case "r":
 		default:
-			newelem.id = `regular${regularTasks.length}`;
 			regularUl.appendChild(newelem);
 	}
 }
