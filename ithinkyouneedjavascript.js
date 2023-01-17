@@ -1,10 +1,5 @@
-var everydayUl = document.getElementById("everyday");
-// We don't need this (yet)
-//var everydayTasks   = everydayUl.getElementsByTagName("li");
-
-var plainUl = document.getElementById("plain");
-// We don't need this (yet)
-//var plainTasks      = plainUl.getElementsByTagName("li");
+var routineUl = document.getElementById("rotine");
+var otherUl = document.getElementById("other");
 
 function addNewTask(type, task) {
 	if(task == null || task == "" || task == " ") {
@@ -13,12 +8,12 @@ function addNewTask(type, task) {
 	var newelem = document.createElement("li");
 	newelem.innerHTML = task + ' <button class="removebutton" onclick="removeTask(this.parentNode)">&#10007;</button>';
 	switch(type) {
-		case "p":
-			todoUl.appendChild(newelem);
-			break;
 		case "o":
+			otherUl.appendChild(newelem);
+			break;
+		case "r":
 		default:
-			regularUl.appendChild(newelem);
+			routineUl.appendChild(newelem);
 	}
 }
 function removeTask(elem) {
