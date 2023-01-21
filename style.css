@@ -15,7 +15,7 @@ body {
 	color: white;
 }
 #title, #description, .columntitle {
-	font-family: Comic Mono, monospace;
+	font-family: Comic Mono, Ubuntu Mono, monospace;
 	text-align: center;
 }
 #columns {
