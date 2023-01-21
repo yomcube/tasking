@@ -6,7 +6,7 @@ function addNewTask(type, task) {
 		return;
 	}
 	var newelem = document.createElement("li");
-	newelem.innerHTML = task + ' <button class="removebutton" onclick="removeTask(this.parentNode)">&#10007;</button>';
+	newelem.innerHTML = task + ' <button class="removebutton" onclick="removeTask(this.parentNode)">&#128500;</button>';
 	switch(type) {
 		case "o":
 			otherUl.appendChild(newelem);
