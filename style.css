@@ -40,3 +40,6 @@ body {
 .newtaskinput {
 	text-align: center;
 }
+.newtaskinput input {
+	width: 85%;
+}
