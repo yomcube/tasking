@@ -19,8 +19,10 @@
 			<hr>
 			<ul id="routine">
 			</ul>
-			<input type="text" id="routineinput">
-			<button onclick="var routineinput=document.getElementById('routineinput');addNewTask('r', routineinput.value);routineinput.value='';">Add new task...</button>
+			<div class="newtaskinput">
+				<input type="text" id="routineinput">
+				<button onclick="var routineinput=document.getElementById('routineinput');addNewTask('r', routineinput.value);routineinput.value='';">Add new task...</button>
+			</div>
 		</div>
 		<div id="othercol" class="column">
 			<div class="columntitle">
@@ -29,8 +31,10 @@
 			<hr>
 			<ul id="other">
 			</ul>
-			<input type="text" id="otherinput">
-			<button onclick="var otherinput=document.getElementById('otherinput');addNewTask('o', otherinput.value);otherinput.value='';">Add new task...</button>
+			<div class="newtaskinput">
+				<input type="text" id="otherinput">
+				<button onclick="var otherinput=document.getElementById('otherinput');addNewTask('o', otherinput.value);otherinput.value='';">Add new task...</button>
+			</div>
 		</div>
 	</div>
 	<script src="ithinkyouneedjavascript.js"></script>
