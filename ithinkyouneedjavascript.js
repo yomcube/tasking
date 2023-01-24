@@ -1,7 +1,5 @@
 var routineUl = document.getElementById('routine');
-var routineTasks = routineUl.getElementsByTagName('li');
 var otherUl = document.getElementById('other');
-var otherTasks = otherUl.getElementsByTagName('li');
 
 function addNewTask(type, task) {
 	if(task == null || task == "" || task == " ") {
@@ -22,8 +20,8 @@ function removeTask(elem) {
 	elem.remove();
 }
 function saveTasks() {
-	localStorage.setItem("routine", routineTasks);
-	localStorage.setItem("other", otherTasks);
+	localStorage.setItem("routine", routineUl.getElementsByTagName("li"));
+	localStorage.setItem("other", otherUl.getElementsByTagName("li"));
 }
 function loadTasks() {
 	routineUl.innerHTML = localStorage.getItem("routine");
