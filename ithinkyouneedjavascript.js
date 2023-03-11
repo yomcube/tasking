@@ -12,8 +12,9 @@ function addNewTask(type, task) {
 			otherUl.appendChild(newelem);
 			break;
 		case "r":
-		default:
 			routineUl.appendChild(newelem);
+		default:
+			console.log('Error creating new task.');
 	}
 }
 function removeTask(elem) {
