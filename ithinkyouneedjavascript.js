@@ -3,7 +3,7 @@ function addNewTask(type, task) {
 		return;
 	}
 	var newelem = document.createElement("li");
-	newelem.innerHTML = task + ' <button class="removebutton" onclick="this.parentNode.remove();">&#10007;</button>';
+	newelem.innerHTML = '<button class="removebutton" onclick="this.parentNode.remove();">&#10007;</button> ' + task;
 	if (type == 'o') {
 		document.getElementById("otherul").appendChild(newelem);
 	} else if (type == 'r') {

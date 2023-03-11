@@ -35,8 +35,10 @@ body {
 }
 .removebutton {
 	font-size: 20px;
-	right: 0px;
 }
 .newtaskinput {
 	text-align: center;
+}
+.column ul {
+	list-style-type:none;
 }
