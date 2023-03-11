@@ -1,5 +1,5 @@
-var routineUl = document.getElementById('routine');
-var otherUl = document.getElementById('other');
+var routineUl = document.getElementById('routineul');
+var otherUl = document.getElementById('otherul');
 
 function addNewTask(type, task) {
 	if(task == null || task == "" || task == " ") {
