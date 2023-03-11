@@ -7,14 +7,12 @@ function addNewTask(type, task) {
 	}
 	var newelem = document.createElement("li");
 	newelem.innerHTML = task + ' <button class="removebutton" onclick="removeTask(this.parentNode)">&#10007;</button>';
-	switch(type) {
-		case "o":
-			otherUl.appendChild(newelem);
-			break;
-		case "r":
-			routineUl.appendChild(newelem);
-		default:
-			console.log('Error creating new task.');
+	if (type == 'o') {
+		otherUl.appendChild(newelem);
+	} else if (type == 'r') {
+		routineUl.appendChild(newelem);
+	} else {
+		console.log('Error E0001')
 	}
 }
 function removeTask(elem) {
