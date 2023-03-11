@@ -9,7 +9,7 @@ body {
 	padding-top: 2.5%;
 	padding-bottom: 2.5%;
 	border-radius: 10px;
-	width: 100%;
+	width: 100vw;
 }
 #title, #description {
 	color: white;
